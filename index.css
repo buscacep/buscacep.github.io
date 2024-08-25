@@ -11,9 +11,13 @@ body {
     color: #89D99D;
 }
 
+#icone {
+    position: relative;
+    bottom: -10px;
+}
+
 main {
     background-color: #e0e0e0;
-    width: 350px;
     height: auto;
     padding: 15px 10px;
     margin: 35px auto;
@@ -69,11 +73,168 @@ main > p {
     text-shadow: 2px 2px 2px rgb(136, 136, 136);
     color: darkslategrey;
     display: flex;
-    font-size: 1.2em;
     font-family: monospace;
 }
 
 main > p::before {
-    content: '-->     ';
+    content: '--->     ';
     margin-right: 10px;
 }
+
+@media(min-width:0px) and (max-width:500px) {
+    main{
+        width: 340px;
+    }
+
+    #titulo {
+        font-size:1.3em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    input::placeholder {
+        font-size: 1em;
+    }
+
+    #icone {
+        width: 25px;
+    }
+
+}
+
+@media (min-width:500px) and (max-width:720px) {
+    main{
+        width: 440px;
+    }
+
+    #titulo {
+        font-size:1.5em;
+    }
+
+    #cep {
+        width: 200px;
+        height: 30px;
+    }
+    #botao {
+        width: 100px;
+        height: 50px;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    input::placeholder {
+        font-size: 1.3em;
+    }
+
+    input {
+        font-size: 1.1em;
+    }
+
+    #erro {
+        font-size: 1.1em;
+    }
+
+    #icone {
+        width: 28px;
+    }
+
+}
+
+@media (min-width:720px) and (max-width:1080px) {
+    main{
+        width: 640px;
+    }
+
+    #titulo {
+        font-size:1.8em;
+    }
+
+    #cep {
+        width: 300px;
+        height: 40px;
+    }
+    #botao {
+        width: 130px;
+        height: 60px;
+    }
+
+    h2 {
+        font-size: 2.1em;
+    }
+
+    p {
+        font-size: 1.7em;
+    }
+
+    input::placeholder {
+        font-size: 1.7em;
+    }
+
+    input {
+        font-size: 1.5em;
+    }
+
+    #erro {
+        font-size: 1.3em;
+    }
+
+    #icone {
+        width: 31px;
+    }
+
+} 
+
+@media (min-width:1080px) and (max-width:1920px) {
+    main{
+        width: 940px;
+    }
+
+    #titulo {
+        font-size:2.4em;
+    }
+
+    #cep {
+        width: 600px;
+        height: 60px;
+    }
+    #botao {
+        width: 170px;
+        height: 80px;
+    }
+
+    h2 {
+        font-size: 2.4em;
+    }
+
+    p {
+        font-size: 2.1em;
+    }
+
+    input::placeholder {
+        font-size: 2.5em;
+    }
+
+    input {
+        font-size: 1.9em;
+    }
+    
+    #erro {
+        font-size: 1.5em;
+    }
+
+    #icone {
+        width: 35px;
+    }
+} 
